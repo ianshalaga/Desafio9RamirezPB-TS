@@ -1,10 +1,10 @@
 import { Router } from "express";
 
 // Routers
-import productsRouter from "./products.router";
-import cartsRouter from "./carts.router";
-import sessionsRouter from "./sessions.router";
-import viewsRouter from "./views.router";
+import productsRouter from "./product.router";
+import cartsRouter from "./cart.router";
+import sessionsRouter from "./session.router";
+import viewsRouter from "./view.router";
 
 import {
   apiRoute,

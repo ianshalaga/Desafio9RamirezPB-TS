@@ -1,4 +1,5 @@
 import cartsModel from "../models/carts.model";
+// Interfaces
 import DbCart from "../../interfaces/DbCart";
 import Cart from "../../interfaces/Cart";
 import ProductCart from "../../interfaces/ProductCart";
@@ -24,7 +25,6 @@ class CartManagerDB {
   async createCart(): Promise<DbCart> {
     try {
       const cart: Cart = { products: [] };
-      // await cartsModel.create(cart);
       const dbCartDoc = await cartsModel.create(cart);
       const dbCart: DbCart = dbCartDoc.toObject();
       return dbCart;

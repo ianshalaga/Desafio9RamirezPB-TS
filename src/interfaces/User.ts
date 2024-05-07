@@ -5,6 +5,7 @@ interface User extends UserLogin {
   lastName: string;
   age: number;
   rol: string;
+  cart: string;
 }
 
 export default User;

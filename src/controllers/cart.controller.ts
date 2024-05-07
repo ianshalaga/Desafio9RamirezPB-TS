@@ -1,10 +1,12 @@
 import { Request, Response } from "express";
 import cartDbService from "../dao/services/cartDB.service";
-import DbCart from "../interfaces/DbCart";
 import { successStatus, failureStatus } from "../utils/statuses";
-import validateProductCart from "../validators/productCart";
+// Interfaces
+import DbCart from "../interfaces/DbCart";
 import ProductCart from "../interfaces/ProductCart";
+// Validators
 import validateNumber from "../validators/number";
+import validateProductCart from "../validators/productCart";
 
 class CartController {
   constructor() {}

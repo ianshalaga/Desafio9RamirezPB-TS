@@ -7,7 +7,7 @@ Noveno desafío entregable del curso de Programación Backend de CoderHouse.
 Con base en las clases previamente vistas, realizar los cambios necesarios en tu proyecto para que se base en un modelo de capas.
 
 - [x] Mover del proyecto todas las partes importantes y comprometedoras a un archivo **.env** para poder leerlo bajo variables de entorno en un archivo **config.js**.
-- El proyecto debe contar con capas de **routing**, **controlador**, **dao**, con nuestras vistas bien separadas y con las responsabilidades correctamente delegadas.
+- [x] El proyecto debe contar con capas de **routing**, **controlador**, **dao**, con nuestras vistas bien separadas y con las responsabilidades correctamente delegadas.
 
 ## Entrega
 

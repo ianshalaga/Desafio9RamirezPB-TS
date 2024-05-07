@@ -1,6 +1,6 @@
 import { Server } from "socket.io";
 // Data Access Object (DAO)
-import ProductManagerDB from "../dao/services/productDB.service";
+import productManagerDB from "../dao/services/productDB.service";
 import messagesModel from "../dao/models/messages.model";
 // Interfaces
 import Product from "../interfaces/Product";
@@ -13,7 +13,6 @@ function socketMessages(socketServer: Server) {
     console.log("Cliente conectado");
     const limit = 1000;
     const page = 1;
-    const productManagerDB: ProductManagerDB = new ProductManagerDB();
     let products: GetProduct = await productManagerDB.getProducts(
       limit,
       page,
