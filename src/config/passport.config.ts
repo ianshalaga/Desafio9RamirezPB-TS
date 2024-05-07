@@ -7,7 +7,7 @@ import User from "../interfaces/User";
 import dbUser from "../interfaces/dbUser";
 import "dotenv/config";
 import GitHubStrategy from "passport-github2";
-import { CartManagerDB } from "../dao/services/CartManagerDB";
+import cartManagerDB from "../dao/services/cartDB.service";
 import DbCart from "../interfaces/DbCart";
 import config from "./env.config";
 
@@ -16,7 +16,7 @@ const githubClientSecret = config.githubClientSecret;
 
 const LocalStrategy = passportLocal.Strategy;
 
-const cartManagerDB: CartManagerDB = new CartManagerDB();
+// const cartManagerDB: CartManagerDB = new CartManagerDB();
 
 const initializePassport = () => {
   // Register

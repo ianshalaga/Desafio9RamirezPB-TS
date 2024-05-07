@@ -1,9 +1,9 @@
 import { Router, Request, Response } from "express";
-import ProductManagerDB from "../dao/services/ProductManagerDB";
+import ProductManagerDB from "../dao/services/productDB.service";
 import QueryParams from "../interfaces/QueryParams";
 import validateQueryParams from "../validators/queryParams";
 import GetProduct from "../interfaces/GetProduct";
-import { CartManagerDB } from "../dao/services/CartManagerDB";
+import cartManagerDB from "../dao/services/cartDB.service";
 import DbCart from "../interfaces/DbCart";
 import { productRoute, productsRoute } from "../utils/routes";
 import DbProduct from "../interfaces/DbProduct";
@@ -130,7 +130,7 @@ viewsRouter.get(productsRoute, async (req: Request, res: Response) => {
 // @@@@
 viewsRouter.get("/carts/:cid", async (req: Request, res: Response) => {
   try {
-    const cartManagerDB: CartManagerDB = new CartManagerDB();
+    // const cartManagerDB: CartManagerDB = new CartManagerDB();
     const cid: string = req.params.cid;
     const cart: DbCart = await cartManagerDB.getCartById(cid);
     res.render("cartDetail", {

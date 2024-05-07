@@ -1,5 +1,5 @@
 import { Router, Request, Response } from "express";
-import ProductManagerDB from "../dao/services/ProductManagerDB";
+import ProductManagerDB from "../dao/services/productDB.service";
 import QueryParams from "../interfaces/QueryParams";
 import UpdateProduct from "../interfaces/UpdateProduct";
 import { successStatus, failureStatus } from "../utils/statuses";

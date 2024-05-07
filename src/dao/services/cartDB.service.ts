@@ -1,12 +1,9 @@
 import cartsModel from "../models/carts.model";
 import DbCart from "../../interfaces/DbCart";
 import Cart from "../../interfaces/Cart";
-// import ProductManagerDB from "./ProductManagerDB";
-// import DbProduct from "../../interfaces/DbProduct";
 import ProductCart from "../../interfaces/ProductCart";
-// import { productsModel } from "../models/products.model";
 
-export class CartManagerDB {
+class CartManagerDB {
   constructor() {}
 
   // @@@@
@@ -140,3 +137,5 @@ export class CartManagerDB {
     }
   }
 }
+
+export default new CartManagerDB();
